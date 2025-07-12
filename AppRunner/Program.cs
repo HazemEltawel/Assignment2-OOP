@@ -14,6 +14,7 @@ class program
         people[0] = new Person("Hazem", 25);
         people[1] = new Person("mahmoud", 30);
         people[2] = new Person("Ali", 22);
+
         foreach (Person person in people)
         {
             Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
