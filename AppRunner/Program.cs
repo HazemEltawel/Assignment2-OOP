@@ -39,42 +39,55 @@ class program
         #endregion
 
         #region Create a struct called "Person" with properties "Name" and "Age". Write a C# program that takes details of 3 persons as input from the user and displays the name and age of the oldest person.
-        Person[] people = new Person[3];
+        //    Person[] people = new Person[3];
 
-        for (int i = 0; i < people.Length; i++)
-        {
-            Console.WriteLine($"Enter details for person {i + 1}:");
+        //    for (int i = 0; i < people.Length; i++)
+        //    {
+        //        Console.WriteLine($"Enter details for person {i + 1}:");
 
-            Console.Write("Name: ");
-            string name = Console.ReadLine();
+        //        Console.Write("Name: ");
+        //        string name = Console.ReadLine();
 
-            Console.Write("Age: ");
-            int age = Convert.ToInt32(Console.ReadLine());
+        //        Console.Write("Age: ");
+        //        int age = Convert.ToInt32(Console.ReadLine());
 
-            people[i] = new Person(name, age);
-        }
+        //        people[i] = new Person(name, age);
+        //    }
 
-        Person oldest = people[0];
-        for (int i = 1; i < people.Length; i++)
-        {
-            if (people[i].Age > oldest.Age)
-            {
-                oldest = people[i];
-            }
-        }
+        //    Person oldest = people[0];
+        //    for (int i = 1; i < people.Length; i++)
+        //    {
+        //        if (people[i].Age > oldest.Age)
+        //        {
+        //            oldest = people[i];
+        //        }
+        //    }
 
-        Console.WriteLine($"\nThe oldest person is: {oldest.Name}, Age: {oldest.Age}");
+        //    Console.WriteLine($"\nThe oldest person is: {oldest.Name}, Age: {oldest.Age}");
+        //}
+
+        #endregion
+
+        #region Create a struct named Rectangle that represents a rectangle with the following fields
+
+        Rectangle rect = new Rectangle();
+
+       
+        rect.Width = 5.5;
+        rect.Height = 3.2;
+
+        rect.Height = -10; 
+
+        Console.WriteLine("\nRectangle Information:");
+        rect.DisplayInfo();
+
+        #endregion
+
+
+
+
+
+
     }
 
-    #endregion
-
-
-
-
-
-
-
-
-
-
-}
+    }
